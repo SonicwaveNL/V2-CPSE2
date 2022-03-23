@@ -1,5 +1,9 @@
 
+all: clean build
 
 build:
-	gcc main.cpp -std=c++17 -o main
-	./main
+	g++ main.cpp -std=c++11 -o run
+	./run
+
+clean:
+	rm -f ./run
